@@ -10,7 +10,42 @@
                 border-collapse: collapse;
                 text-align: center;
             }
+            caption{
+                caption-side: bottom;
+                color: aquamarine;
+                margin-top: 10px;
+            }
+            th{
+                text-transform: capitalize;
+            }
+            tr:nth-child(2n){
+                background-color: blueviolet;
+            }
+            tr:nth-child(2n+1){
+                background-color: palevioletred;
+            }
+            td,th{
+                border: 2px solid lightblue;
+                width: 150px;
+                font-weight: 700;
+                padding: 5px;
+            }
+            td:nth-child(2n+1){
+                color: sandybrown;
+            }
         </style>
     </head>
-    <body></body>
+    <body>
+        <table>
+            <caption>表格01</caption>
+            <thead>
+                <tr><th>outlet</th><th><address></address></th><th>business hour</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>Shop01</td><td>Address01</td><td>1000 - 1800</td></tr>
+                <tr><td>Shop02</td><td>Address02</td><td>1000 - 1800</td></tr>
+                <tr><td>Shop01</td><td>Address03</td><td>1000 - 1800</td></tr>
+            </tbody>
+        </table>
+    </body>
 </htal>
